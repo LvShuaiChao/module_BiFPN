@@ -35,13 +35,13 @@ if __name__ == '__main__':
     p3 = torch.rand(8, 40, 80, 80)
     p4 = torch.rand(8, 112, 40, 40)
     p5 = torch.rand(8, 320, 20, 20)
-
+    print('---------------------------------------------------')
+    print('输入')
     print("p3.shape:", p3.shape)
     print("p4.shape:", p4.shape)
     print("p5.shape:", p5.shape)
 
-
-
+    print('输出')
     features = (p3, p4, p5)
     outputs = bifpn(features)
     o3,o4,o5,_,_ = outputs
